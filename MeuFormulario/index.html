@@ -8,57 +8,122 @@
     </style>
   </head>
   <body>
-    <table class="css_tabela" cellpadding="30" border="1">
-      <tr>
-        <th>Produto</th>
-        <th>Preço R$</th>
-        <th>Imagem</th>
-      </tr>
-      <tr>
-        <td>Feijão</td>
-        <td>4,20</td>
-        <td><img src="IMAGEM/feijao-1.jpg"></td>
-      </tr>
-      <tr>
-        <td>Arroz</td>
-        <td>3,50</td>
-        <td><img src="IMAGEM/arroz.jpg"></td>
-      </tr>
-    </table>
+    <header>
+      <h1>Cabeçalho</h1>
+      <nav>
+        <ul>
+          <li>Lançamentos e ofertas</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table class="css_tabela" width="40%" border="1" cellpacing="20" cellpadding="2">
+        <tr>
+          <th>Produto</th>
+          <th>Preço R$</th>
+          <th>Imagem</th>
+        </tr>
+        <tr>
+          <td>Feijão</td>
+          <td>4,20</td>
+          <td><img src="IMAGEM/feijao.jpg"width="60%" heigth="50%" aling="center"></td>
+        </tr>
+        <tr>
+          <td>Arroz</td>
+          <td>3,50</td>
+          <td><img src="IMAGEM/arroz.png"width="60%" heigth="50%" aling="center"></td>
+        </tr>
+      </table>
+    </br>
+      <table class="css_tabela" width="40%" border="1"cellpacing="20" cellpadding="20">
+        <tr>
+          <th>Produto</th>
+          <th>Preço R$</th>
+          <th>Imagem</th>
+        </tr>
+        <tr>
+          <td>Feijão</td>
+          <td rowspan="2">4,20</td>
+          <td><img src="IMAGEM/feijao.jpg" width="60%" heigth="50%" aling="center"> </td>
+        </tr>
+        <tr>
+          <td>Arroz</td>
+          <td><img src="IMAGEM/arroz.png"width="60%" heigth="50%" aling="center"></td>
+        </tr>
+      </table>
+      <form action="index.html" method="post">
+        Nome: <input type="text" name="nome" value="">
+        </br>
+        Endereço: <input type="text" name="endereco" value="">
+        </br>
+        Estado: <select name="estados">
+          <option value="pb">Paraíba</option>
+          <option value="pe">Pernambuco</option>
+          <option value="rn">Rio Grande do Norte</option>
+        </select>
+        </br>
+        Sexo: <input type="radio" name="sexo" value="masculino" > Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino
+        </br>
+        Matérias preferidas: <input type="checkbox" name="materias_p" value="portugues">Português -
+        <input type="checkbox" name="materias_p" value="java">Java -
+        <input type="checkbox" name="materias_p" value="matematica">Matemática -
+        <input type="checkbox" name="materias_p" value="php">PHP
+        </br>
+        Resumo de suas habilidades: <textarea name="habilidades" rows="8" cols="80"></textarea>
+        </br>
+        <input type="submit" name="Enviar">
+        </br>
+      </form>
+    </br>
 
-    <table class="css_tabela" cellpadding="30" border="1">
-      <tr>
-        <th>Produto</th>
-        <th>Preço R$</th>
-        <th>Imagem</th>
-      </tr>
-      <tr>
-        <td>Feijão</td>
-        <td rowspan="2">4,20</td>
-        <td><img src="IMAGEM/feijao-1.jpg"></td>
-      </tr>
-      <tr>
-        <td>Arroz</td>
-        <td><img src="IMAGEM/arroz.jpg"></td>
-      </tr>
-    </table>
-
-    <form action="index.html" method="post">
-      Nome: <input type="text" name="nome" value="">
-      Endereço: <input type="text" name="endereco" value="">
-      Estado: <select name="estados">
-        <option value="pb">Paraíba</option>
-        <option value="pe">Pernambuco</option>
-        <option value="rn">Rio Grande do Norte</option>
-      </select>
-      Sexo: <input type="radio" name="sexo" value="masculino" > Masculino
-      <input type="radio" name="sexo" value="feminino"> Feminino
-      Matérias preferidas: <input type="checkbox" name="materias_p" value="portugues">Português -
-      <input type="checkbox" name="materias_p" value="java">Java -
-      <input type="checkbox" name="materias_p" value="matematica">Matemática -
-      <input type="checkbox" name="materias_p" value="php">PHP
-      Resumo de suas habilidades: <textarea name="habilidades" rows="8" cols="80"></textarea>
-      <input type="submit" name="Enviar">
-    </form>
+      <table border="1">
+        <form>
+            <tr><caption><th colspan="2">Formulário de cadastramento</th></caption></tr>
+          </br>
+          <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="nome" value=""></td>
+          </tr>
+          </br>
+          <tr>
+            <td>Endereço:</td>
+            <td><input type="text" name="endereco" value=""></td>
+          </tr>
+          </br>
+          <tr>
+            <td>Estado:</td>
+            <td> <select name="estados">
+              <option value="pb">Paraíba</option>
+              <option value="pe">Pernambuco</option>
+              <option value="rn">Rio Grande do Norte</option></td>
+          </tr>
+          <tr>
+            <td>Sexo:</td>
+            <td><input type="radio" name="sexo" value="masculino" > Masculino
+            <input type="radio" name="sexo" value="feminino"> Feminino</td>
+          </tr>
+          <tr>
+            <td>Matérias preferidas:</td>
+            <td><input type="checkbox" name="materias_p" value="portugues">Português -
+            <input type="checkbox" name="materias_p" value="java">Java -
+            <input type="checkbox" name="materias_p" value="matematica">Matemática -
+            <input type="checkbox" name="materias_p" value="php">PHP</td>
+          </tr>
+          <tr>
+            <td>Resumo de suas habilidades:</td>
+            <td><textarea name="habilidades" rows="8" cols="80"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" name="Enviar"></td>
+          </tr>
+        </form>
+      </table>
+    </main>
+    <footer>
+      <h3>
+        Rodapé
+      </h3>
+    </footer>
   </body>
 </html>
