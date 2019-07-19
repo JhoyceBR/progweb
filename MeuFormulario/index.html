@@ -1,129 +1,27 @@
 <!DOCTYPE html>
-<html">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style>
-      th, td {padding: 40px}
-    </style>
+    <title>Escola</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+  <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <header>
-      <h1>Cabeçalho</h1>
-      <nav>
-        <ul>
-          <li>Lançamentos e ofertas</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <table class="css_tabela" width="40%" border="1" cellpacing="20" cellpadding="2">
-        <tr>
-          <th>Produto</th>
-          <th>Preço R$</th>
-          <th>Imagem</th>
-        </tr>
-        <tr>
-          <td>Feijão</td>
-          <td>4,20</td>
-          <td><img src="IMAGEM/feijao.jpg"width="60%" heigth="50%" aling="center"></td>
-        </tr>
-        <tr>
-          <td>Arroz</td>
-          <td>3,50</td>
-          <td><img src="IMAGEM/arroz.png"width="60%" heigth="50%" aling="center"></td>
-        </tr>
-      </table>
-    </br>
-      <table class="css_tabela" width="40%" border="1"cellpacing="20" cellpadding="20">
-        <tr>
-          <th>Produto</th>
-          <th>Preço R$</th>
-          <th>Imagem</th>
-        </tr>
-        <tr>
-          <td>Feijão</td>
-          <td rowspan="2">4,20</td>
-          <td><img src="IMAGEM/feijao.jpg" width="60%" heigth="50%" aling="center"> </td>
-        </tr>
-        <tr>
-          <td>Arroz</td>
-          <td><img src="IMAGEM/arroz.png"width="60%" heigth="50%" aling="center"></td>
-        </tr>
-      </table>
-      <form action="index.html" method="post">
-        Nome: <input type="text" name="nome" value="">
-        </br>
-        Endereço: <input type="text" name="endereco" value="">
-        </br>
-        Estado: <select name="estados">
-          <option value="pb">Paraíba</option>
-          <option value="pe">Pernambuco</option>
-          <option value="rn">Rio Grande do Norte</option>
-        </select>
-        </br>
-        Sexo: <input type="radio" name="sexo" value="masculino" > Masculino
-        <input type="radio" name="sexo" value="feminino"> Feminino
-        </br>
-        Matérias preferidas: <input type="checkbox" name="materias_p" value="portugues">Português -
-        <input type="checkbox" name="materias_p" value="java">Java -
-        <input type="checkbox" name="materias_p" value="matematica">Matemática -
-        <input type="checkbox" name="materias_p" value="php">PHP
-        </br>
-        Resumo de suas habilidades: <textarea name="habilidades" rows="8" cols="80"></textarea>
-        </br>
-        <input type="submit" name="Enviar">
-        </br>
-      </form>
-    </br>
-
-      <table border="1">
-        <form>
-            <tr><caption><th colspan="2">Formulário de cadastramento</th></caption></tr>
-          </br>
-          <tr>
-            <td>Nome:</td>
-            <td><input type="text" name="nome" value=""></td>
-          </tr>
-          </br>
-          <tr>
-            <td>Endereço:</td>
-            <td><input type="text" name="endereco" value=""></td>
-          </tr>
-          </br>
-          <tr>
-            <td>Estado:</td>
-            <td> <select name="estados">
-              <option value="pb">Paraíba</option>
-              <option value="pe">Pernambuco</option>
-              <option value="rn">Rio Grande do Norte</option></td>
-          </tr>
-          <tr>
-            <td>Sexo:</td>
-            <td><input type="radio" name="sexo" value="masculino" > Masculino
-            <input type="radio" name="sexo" value="feminino"> Feminino</td>
-          </tr>
-          <tr>
-            <td>Matérias preferidas:</td>
-            <td><input type="checkbox" name="materias_p" value="portugues">Português -
-            <input type="checkbox" name="materias_p" value="java">Java -
-            <input type="checkbox" name="materias_p" value="matematica">Matemática -
-            <input type="checkbox" name="materias_p" value="php">PHP</td>
-          </tr>
-          <tr>
-            <td>Resumo de suas habilidades:</td>
-            <td><textarea name="habilidades" rows="8" cols="80"></textarea></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input type="submit" name="Enviar"></td>
-          </tr>
-        </form>
-      </table>
-    </main>
-    <footer>
-      <h3>
-        Rodapé
-      </h3>
-    </footer>
+    <h1>Cadastro no sistema </h1>
+    <p>Cadastre clicando nos links abaixo. </p>
+    <ul>
+      <li> <a href="aluno.html">Cadastre aluno</a> </li>
+      <li> <a href="escola.html">Cadastre escola</a> </li>
+      <li> <a href="curso.html">Cadastre curso</a> </li>
+      <li> <a href="turma.html">Cadastre turma</a> </li>
+      <li> <a href="disciplina.html">Cadastre disciplina</a> </li>
+    </ul>
   </body>
 </html>
