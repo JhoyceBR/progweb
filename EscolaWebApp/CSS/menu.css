@@ -11,9 +11,9 @@
   text-decoration: none;
   display: block;
   padding: 1px;
-  color: rgb(234, 107, 111);
+  color: gray;
 
 }
 .navigation a:hover{
-  background: rgba(70, 130, 180, .5);
+  background: rgba(70, 130, 0, 0.5);
 }

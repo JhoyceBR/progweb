@@ -3,11 +3,13 @@
   padding: 0;
 }
 
-.container{
-  border: 1px solid blue;
-  width: 80%;
-  height: 100%;
+.meu-container{
+  color: white;
   margin: 0 auto;
+  padding: 0;
+  border: 1px solid blue;
+  width: 80%; /*largura*/
+  min-height: 100vh; /*altura*/
 
   /*Flex*/
   display: flex;
@@ -16,12 +18,13 @@
 }
 
 header{
-  background-color: rgb(231, 213, 252);
+  background-color: rgb(233, 226, 106);
+
 }
 
 main{
-  background-color: rgb(228, 221, 258);
-  flex-grow: 1;
+  background-color: rgb(0,0,0);
+  flex-grow: 1; /*especifica quanto o item crescera em relacao ao restante dos itens flexiveis dentro do mesmo containe*/
 }
 
 footer{
